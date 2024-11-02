@@ -1,0 +1,8 @@
+# Folders
+build/
+
+# Files
+*.tar.gz
+*.log
+*.txt
+

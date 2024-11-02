@@ -1,0 +1,14 @@
+# KIM Configuration
+
+# Changes the number of lines traversed when scrolling
+SCROLL_STEP = 4
+
+# Changes what the tab key emits (1 = spaces, 0 = tabs)
+TAB_SPACE = 0
+
+# Changes the width of the tab character
+TAB_INDENT = 4
+
+# Choose between 8, 16 or 256 colors in the terminal
+COLOR = 256
+

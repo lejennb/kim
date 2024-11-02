@@ -1,0 +1,9 @@
+[Desktop Entry]
+Exec=/usr/bin/kim %F
+Version=1.0
+Name=Kim
+Comment[en]=Kilo IMproved
+Terminal=true
+Icon=kim_icon
+Type=Application
+Categories=Utility;Development;System;
