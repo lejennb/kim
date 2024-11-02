@@ -1,0 +1,62 @@
+Kim_Diff.txt     For KIM version 1.0.     Last change: May 18, 2024
+
+
+Differences between Kilo and KIM (KIm)
+
+
+KIM is a modified version of Snaptokens Editor project, which is
+a modified version of Kilo - a text editor written in C.
+
+At the time of writing this (2022-2023), the Snaptoken version
+has received many fixes that have paved the way for the KIM 
+project to be started in order to create an even more functional
+editor on top of that, as it is the only genuinely functional
+version of the editor.
+
+
+1. Syntax Highlighting:
+	- Moved syntax highlighting database to "syntax.c & syntax.h"
+	- Expanded syntax highlighting to support more languages
+	- Added more keywords to highlight
+	- Introduced highlighting for binary / hexadecimal literals
+	- Added multi-line strings with in-string escapes (", ', `)
+	- Implemented in-string highlighting (escapes / formats)
+	- Updated search to show not one, but all results in every line
+	- Syntax highlighting may also be changed / disabled anytime
+
+2. Terminal Interface: 
+	- Improved terminal interaction, clear screen and scrollback
+	- Added SIGWINCH signal handler to resize the editor
+	- Added command line arguments for basic information 
+	- Implemented line deletion functionality (single / multiple)
+	- Added mouse scrolling for ST, see ".kimrc" for line traversal
+	- Introduced search and replace functionality
+	- A dynamic copy / paste buffer has been implemented
+	- Added jump to line feature
+
+3. File Interaction:
+	- Added ability to create new files at launch / in the editor
+	- Files may now also be loaded directly from within the editor
+	- Implemented "save-as" feature
+
+4. Welcome Message, Status Bar:
+	- Simplified welcome message
+	- Updated status bar design to be more intuitive
+
+5. Build / Release System:
+	- Implemented binary release automation for Linux, BSD, MacOS
+	- Added checksums and installer for release packages
+	- Added makefile for various binary builds
+
+6. Configuration Management:
+	- The ".kimrc" config may now be used to configure the editor
+	- If KIM cannot find it in /etc, it will use defaults
+	- KIM highlights the config based on settings categories
+	- Config values are subject to sanity checks, reset if needed
+
+7. Hardware Interaction:
+	- Fixed the existing memory leaks (Valgrind: still reachable)
+
+8. Project Structure:
+	- Fully modularized the codebase
+
